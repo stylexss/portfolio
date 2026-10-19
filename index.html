@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of a beginner developer showcasing skills, projects, and contact information.">
+    <meta property="og:title" content="Alex Johnson | Beginner Web Developer">
+    <meta property="og:description" content="Clean, modern portfolio showcasing beginner developer projects.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourusername.github.io/portfolio/">
+    <title>Alex Johnson | Beginner Web Developer</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav__logo">Alex Johnson</a>
+            
+            <button class="nav__toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                <span class="nav__bar"></span>
+                <span class="nav__bar"></span>
+                <span class="nav__bar"></span>
+            </button>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero section" id="home">
+            <div class="hero__container container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Hi, I'm <span class="hero__title--highlight">Alex Johnson</span></h1>
+                    <h2 class="hero__subtitle">Beginner Web Developer</h2>
+                    <p class="hero__description">
+                        I'm a self-taught developer learning to build clean, responsive, and user-friendly websites. 
+                        I'm passionate about turning ideas into functional code.
+                    </p>
+                    <div class="hero__buttons">
+                        <a href="#projects" class="btn btn--primary">View Projects</a>
+                        <a href="#contact" class="btn btn--secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero__image">
+                    <img src="assets/images/profile-placeholder.svg" alt="Alex Johnson profile avatar" class="hero__img">
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="container">
+                <h2 class="section__title">About Me</h2>
+                <span class="section__subtitle">Get to know me</span>
+                
+                <div class="about__container">
+                    <div class="about__image">
+                        <img src="assets/images/profile-placeholder.svg" alt="Alex Johnson sitting at desk" class="about__img">
+                    </div>
+                    <div class="about__content">
+                        <p class="about__description">
+                            I'm a beginner developer based in New York, USA, focused on learning front-end development. 
+                            I enjoy solving problems, writing readable code, and continuously improving my skills through hands-on projects.
+                        </p>
+                        <p class="about__description">
+                            When I'm not coding, I love reading tech blogs, exploring new tools, and building small projects to apply what I've learned.
+                        </p>
+                        <div class="about__info">
+                            <div class="about__info-item">
+                                <span class="about__info-title">3+</span>
+                                <span class="about__info-name">Mini Projects <br> Completed</span>
+                            </div>
+                            <div class="about__info-item">
+                                <span class="about__info-title">6+</span>
+                                <span class="about__info-name">Months <br> Learning</span>
+                            </div>
+                            <div class="about__info-item">
+                                <span class="about__info-title">100%</span>
+                                <span class="about__info-name">Motivated <br> to Grow</span>
+                            </div>
+                        </div>
+                        <a href="mailto:alex.johnson.dev@example.com" class="btn btn--primary">Say Hello</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <div class="container">
+                <h2 class="section__title">Skills</h2>
+                <span class="section__subtitle">Technologies I'm learning</span>
+                
+                <div class="skills__container">
+                    <!-- Languages -->
+                    <div class="skills__category">
+                        <h3 class="skills__category-title">
+                            <i class="fas fa-code skills__icon"></i> Languages
+                        </h3>
+                        <div class="skills__list">
+                            <span class="skills__item">HTML5</span>
+                            <span class="skills__item">CSS3</span>
+                            <span class="skills__item">JavaScript (ES6+)</span>
+                        </div>
+                    </div>
+
+                    <!-- Frontend -->
+                    <div class="skills__category">
+                        <h3 class="skills__category-title">
+                            <i class="fas fa-layer-group skills__icon"></i> Frontend
+                        </h3>
+                        <div class="skills__list">
+                            <span class="skills__item">Responsive Design</span>
+                            <span class="skills__item">Flexbox</span>
+                            <span class="skills__item">CSS Grid</span>
+                            <span class="skills__item">Tailwind CSS</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools -->
+                    <div class="skills__category">
+                        <h3 class="skills__category-title">
+                            <i class="fas fa-tools skills__icon"></i> Tools & Workflow
+                        </h3>
+                        <div class="skills__list">
+                            <span class="skills__item">Git & GitHub</span>
+                            <span class="skills__item">VS Code</span>
+                            <span class="skills__item">Chrome DevTools</span>
+                            <span class="skills__item">Markdown</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="container">
+                <h2 class="section__title">Projects</h2>
+                <span class="section__subtitle">Some things I've built</span>
+                
+                <div class="projects__container">
+                    <!-- Project 1 -->
+                    <article class="project__card">
+                        <div class="project__image">
+                            <img src="assets/images/project-placeholder.svg" alt="Preview of To-Do App project" class="project__img">
+                        </div>
+                        <div class="project__content">
+                            <h3 class="project__title">To-Do App</h3>
+                            <p class="project__description">
+                                A simple task manager built with vanilla JavaScript. Users can add, complete, and delete tasks with data saved in local storage.
+                            </p>
+                            <div class="project__tech">
+                                <span class="project__tech-item">HTML</span>
+                                <span class="project__tech-item">CSS</span>
+                                <span class="project__tech-item">JavaScript</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="project__link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/yourusername/todo-app" target="_blank" rel="noopener noreferrer" class="project__link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2 -->
+                    <article class="project__card">
+                        <div class="project__image">
+                            <img src="assets/images/project-placeholder.svg" alt="Preview of Calculator project" class="project__img">
+                        </div>
+                        <div class="project__content">
+                            <h3 class="project__title">Calculator</h3>
+                            <p class="project__description">
+                                A functional calculator with basic arithmetic operations. Built with clean UI and keyboard-friendly button layout.
+                            </p>
+                            <div class="project__tech">
+                                <span class="project__tech-item">HTML</span>
+                                <span class="project__tech-item">CSS</span>
+                                <span class="project__tech-item">JavaScript</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="project__link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/yourusername/calculator" target="_blank" rel="noopener noreferrer" class="project__link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3 -->
+                    <article class="project__card">
+                        <div class="project__image">
+                            <img src="assets/images/project-placeholder.svg" alt="Preview of Landing Page project" class="project__img">
+                        </div>
+                        <div class="project__content">
+                            <h3 class="project__title">Product Landing Page</h3>
+                            <p class="project__description">
+                                A responsive landing page showcasing a product with hero section, features, pricing, and contact form layout.
+                            </p>
+                            <div class="project__tech">
+                                <span class="project__tech-item">HTML</span>
+                                <span class="project__tech-item">CSS</span>
+                                <span class="project__tech-item">JavaScript</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="#" target="_blank" rel="noopener noreferrer" class="project__link">
+                                    <i class="fas fa-external-link-alt"></i> Live Demo
+                                </a>
+                                <a href="https://github.com/yourusername/landing-page" target="_blank" rel="noopener noreferrer" class="project__link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="container">
+                <h2 class="section__title">Contact</h2>
+                <span class="section__subtitle">Get in touch with me</span>
+                
+                <div class="contact__container">
+                    <div class="contact__info">
+                        <div class="contact__card">
+                            <i class="fas fa-envelope contact__card-icon"></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">alex.johnson.dev@example.com</span>
+                            <a href="mailto:alex.johnson.dev@example.com" class="contact__button">
+                                Write me <i class="fas fa-arrow-right contact__button-icon"></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class="fab fa-github contact__card-icon"></i>
+                            <h3 class="contact__card-title">GitHub</h3>
+                            <span class="contact__card-data">@yourusername</span>
+                            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="contact__button">
+                                View Profile <i class="fas fa-arrow-right contact__button-icon"></i>
+                            </a>
+                        </div>
+
+                        <div class="contact__card">
+                            <i class="fab fa-linkedin-in contact__card-icon"></i>
+                            <h3 class="contact__card-title">LinkedIn</h3>
+                            <span class="contact__card-data">@yourusername</span>
+                            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="contact__button">
+                                Connect <i class="fas fa-arrow-right contact__button-icon"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <form class="contact__form" action="https://formspree.io/f/your-form-id" method="POST">
+                        <div class="contact__form-group">
+                            <label for="name" class="contact__form-label">Name</label>
+                            <input type="text" id="name" name="name" class="contact__form-input" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="contact__form-group">
+                            <label for="email" class="contact__form-label">Email</label>
+                            <input type="email" id="email" name="email" class="contact__form-input" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="contact__form-group contact__form-group--full">
+                            <label for="message" class="contact__form-label">Message</label>
+                            <textarea id="message" name="message" class="contact__form-input contact__form-textarea" placeholder="Write your message here..." rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary contact__form-button">
+                            Send Message <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__container">
+                <h1 class="footer__title">Alex Johnson</h1>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <a href="#home" class="footer__link">Home</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#about" class="footer__link">About</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#projects" class="footer__link">Projects</a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#contact" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+                <div class="footer__social">
+                    <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:alex.johnson.dev@example.com" class="footer__social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <span class="footer__copy">
+                    &copy; <span id="year"></span> Alex Johnson. All rights reserved.
+                </span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
